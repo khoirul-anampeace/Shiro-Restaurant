@@ -10,6 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -55,7 +56,7 @@
             <div class="container">
                 <div class="row g-0 d-flex">
                     <div class="col-md-6 col-sm-12 col-lg-6 align-self-center">
-                        <div class="title">
+                        <div class="title" data-aos="fade-right">
                             <h1>
                                 Serve The Best <br>
                                 <span>Japanese</span> Foods
@@ -69,7 +70,8 @@
                     </div>
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <!-- <img src="img/home.png" alt=""> -->
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                            data-aos="fade-left">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="img/home.png" class="d-block " alt="...">
@@ -90,11 +92,11 @@
         <section class="content" id="about">
             <div class="container">
                 <div class="row g-0 d-flex">
-                    <div class="col-md-6 col-sm-12 col-lg-6">
+                    <div class="col-md-6 col-sm-12 col-lg-6" data-aos="fade-right">
                         <img src="img/owner1.png" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12 col-lg-6 align-self-center">
-                        <div class="title">
+                        <div class="title" data-aos="fade-left">
                             <h1>
                                 We create <span>delicious</span>
                                 memories for you
@@ -132,9 +134,9 @@
 
         <section class="content" id="menu">
             <div class="container">
-                <h1>Explore our <span>menu</span></h1>
+                <h1 data-aos="fade-right">Explore our <span>menu</span></h1>
                 <div class="menu-menu">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" data-aos="fade-right">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -153,7 +155,7 @@
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">
+                            aria-labelledby="pills-home-tab" data-aos="fade-up">
                             <!-- isi nav pills -->
                             <div class="menu-content row">
                                 <div class="col-lg-3 col-md-6 col-sm-12 mouse">
@@ -314,7 +316,7 @@
             <div class="container">
                 <div class="row d-flex">
                     <div class="col-sm-12 col-md-12 col-lg-6 align-self-center ">
-                        <div class="title">
+                        <div class="title" data-aos="fade-right">
                             <h1>Our Tradition <span>Gallery</span>
                             </h1>
                             <p>Shiro is dedicated to producting Japanese Foods using traditional and family recipes -
@@ -324,7 +326,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-6 align-self-center image-layout">
-                        <div class="row g-2">
+                        <div class="row g-2" data-aos="fade-up">
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <img src="img/G1.jpg">
                             </div>
@@ -360,8 +362,8 @@
 
         <section class="content" id="article">
             <div class="container">
-                <h1>What is New?</h1>
-                <div class="row g-sm-0 g-md-3 g-lg-3">
+                <h1 data-aos="fade-right">What is New?</h1>
+                <div class="row g-sm-0 g-md-3 g-lg-3" data-aos="fade-up">
                     <div class="col-md-6 col-sm-12 col-lg-4">
                         <div class="content-article">
                             <img src="img/A1.jpeg">
@@ -403,8 +405,8 @@
 
         <section class="content" id="testimony">
             <div class="container">
-                <h1>They <span>Said</span> About Us</h1>
-                <div class="testimony-content">
+                <h1 data-aos="fade-right">They <span>Said</span> About Us</h1>
+                <div class="testimony-content" data-aos="fade-up">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -470,8 +472,8 @@
 
         <section class="content" id="contact">
             <div class="container">
-                <h1><span>Contact</span> Us</h1>
-                <form class="row g-3">
+                <h1 data-aos="fade-right"><span>Contact</span> Us</h1>
+                <form class="row g-3" data-aos="fade-up">
                     <div class="col-md-6">
                         <label for="inputNama" class="form-label">First name</label>
                         <input type="text" class="form-control" id="inputNama">
@@ -564,6 +566,10 @@
 
     <script src="js/jquery.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://kit.fontawesome.com/62bf956e5e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
