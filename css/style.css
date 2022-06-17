@@ -50,6 +50,25 @@ header .navbar-nav a {
   min-height: 100vh;
   padding: 100px 0;
 }
+
+main a .scrolltop {
+  background-color: #a7c4bc;
+  position: fixed;
+  padding: 10px 15px;
+  z-index: 1;
+  right: 15px;
+  bottom: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+main a .show-scroll {
+  visibility: visible;
+  bottom: 20px;
+}
+main a .scrolltop i {
+  color: #fff;
+}
 #home .title {
   width: 80%;
   text-align: justify;
@@ -116,6 +135,22 @@ header .navbar-nav a {
   margin-top: -70px;
   text-align: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#menu .menu-content .mouse {
+  position: relative;
+}
+#menu .menu-content .prices {
+  position: absolute;
+  text-align: center;
+  padding-top: 14px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  top: 20px;
+  right: 20px;
+  background-color: #2f5d62;
+  color: #fff;
 }
 #menu .menu-content img {
   width: 16rem;
@@ -206,6 +241,10 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+footer img {
+  cursor: pointer;
+  width: 50px;
+}
 footer p.address {
   width: 80%;
 }
@@ -237,16 +276,6 @@ footer ul.horizontal li {
 footer ul.horizontal li i {
   font-size: 25px;
   margin-right: 10px;
-  color: #000;
-}
-#founder {
-  background-color: #e7e7e7;
-  font-size: 0.8rem;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: -50px;
-}
-#founder a {
   color: #000;
 }
 
@@ -281,6 +310,10 @@ footer ul.horizontal li i {
   }
   #menu .menu-content div {
     margin-bottom: 20px;
+  }
+  #menu .menu-content .prices {
+    top: 20px;
+    right: 45px;
   }
   footer .margintop-5 {
     margin-top: 3rem;
@@ -319,6 +352,9 @@ footer ul.horizontal li i {
   footer .margintop-5 {
     margin-top: 3rem;
   }
+  #article .container .row .content-article {
+    margin-bottom: 20px;
+  }
 }
 
 /* page */
@@ -330,5 +366,5 @@ footer ul.horizontal li i {
   padding-top: 50px !important;
 }
 .menu-ramen .pagination {
-  margin: 5px auto;
+  margin: 25px auto;
 }
